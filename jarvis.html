@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Jarvis AI - Assistant Dashboard</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body class="bg-[#111418]">
+<div class="relative flex size-full min-h-screen flex-col bg-[#111418] dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+<div class="flex h-full grow">
+<aside class="flex flex-col gap-y-6 shrink-0 w-64 bg-[#181C20] p-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-[#1173d4] rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-2xl">psychology</span>
+</div>
+<div class="flex flex-col">
+<h1 class="text-white text-lg font-bold">Jarvis AI</h1>
+<p class="text-[#9dabb9] text-sm">Personal Assistant v1.0</p>
+</div>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-3 py-2 rounded-md bg-[#1173d4] text-white" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-sm font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-md text-white/70 hover:bg-[#283039] hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">mic</span>
+<span class="text-sm font-medium">Voice Commands</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-md text-white/70 hover:bg-[#283039] hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">search</span>
+<span class="text-sm font-medium">Information Hub</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-md text-white/70 hover:bg-[#283039] hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">apps</span>
+<span class="text-sm font-medium">System Control</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-md text-white/70 hover:bg-[#283039] hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-sm font-medium">Settings</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-md text-white/70 hover:bg-[#283039] hover:text-white transition-colors" href="index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="text-sm font-medium">Back to Home</span>
+</a>
+</nav>
+</aside>
+<main class="flex-1 p-8">
+<header class="mb-8">
+<h1 class="text-4xl font-bold text-white tracking-tight">Jarvis AI Assistant</h1>
+<p class="text-white/70 mt-2">Your personal AI companion for productivity and information</p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 space-y-8">
+<section>
+<h2 class="text-2xl font-bold text-white mb-4">Voice Command Interface</h2>
+<div class="bg-[#181C20] p-6 rounded-lg">
+<div class="flex items-center gap-4 mb-4">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-white/50">mic</span>
+<input class="form-input w-full rounded-md text-white bg-[#283039] border-transparent focus:border-[#1173d4] focus:ring-[#1173d4] pl-10 pr-4 py-3" placeholder="Say something like 'What's the weather?' or 'Open Wikipedia'..." value=""/>
+</div>
+<button class="flex items-center gap-2 min-w-[120px] cursor-pointer justify-center rounded-md h-12 px-4 bg-[#1173d4] text-white text-sm font-bold tracking-wide hover:bg-blue-600 transition-colors">
+<span class="material-symbols-outlined">graphic_eq</span>
+<span class="truncate">Start Listening</span>
+</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4">
+<button class="px-3 py-2 bg-[#283039] hover:bg-[#3b4754] text-white/80 text-xs rounded-md transition-colors">Weather</button>
+<button class="px-3 py-2 bg-[#283039] hover:bg-[#3b4754] text-white/80 text-xs rounded-md transition-colors">Time & Date</button>
+<button class="px-3 py-2 bg-[#283039] hover:bg-[#3b4754] text-white/80 text-xs rounded-md transition-colors">Wikipedia</button>
+<button class="px-3 py-2 bg-[#283039] hover:bg-[#3b4754] text-white/80 text-xs rounded-md transition-colors">Open Apps</button>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-2xl font-bold text-white mb-4">AI Response Display</h2>
+<div class="bg-[#181C20] p-6 rounded-lg min-h-[300px]">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-8 h-8 bg-[#1173d4] rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-sm">psychology</span>
+</div>
+<span class="text-white font-medium">Jarvis AI</span>
+</div>
+<div class="text-white/90 space-y-3">
+<p class="p-3 bg-[#283039] rounded-md">👋 Hello! I'm Jarvis, your personal AI assistant. I can help you with:</p>
+<ul class="text-white/70 space-y-2 ml-4">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-blue-400 text-sm">check</span>
+Voice-activated information searches
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-blue-400 text-sm">check</span>
+Weather updates and current time
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-blue-400 text-sm">check</span>
+Opening websites and applications
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-oriented text-blue-400 text-sm">check</span>
+System controls and automation
+</li>
+</ul>
+<p class="text-white/60 italic mt-4">Try saying "What's the weather today?" or "Tell me about artificial intelligence"</p>
+</div>
+</div>
+</section>
+</div>
+<div class="space-y-8">
+<section>
+<h2 class="text-2xl font-bold text-white mb-4">Quick Actions</h2>
+<div class="bg-[#181C20] p-6 rounded-lg space-y-4">
+<button class="w-full flex items-center gap-3 p-3 bg-[#283039] hover:bg-[#3b4754] rounded-md transition-colors">
+<span class="material-symbols-outlined text-blue-400">volume_up</span>
+<div class="text-left">
+<div class="text-white font-medium">Text-to-Speech</div>
+<div class="text-white/60 text-sm">Convert text to natural voice</div>
+</div>
+</button>
+<button class="w-full flex items-center gap-3 p-3 bg-[#283039] hover:bg-[#3b4754] rounded-md transition-colors">
+<span class="material-symbols-outlined text-green-400">cloud</span>
+<div class="text-left">
+<div class="text-white font-medium">Weather Update</div>
+<div class="text-white/60 text-sm">Get current weather info</div>
+</div>
+</button>
+<button class="w-full flex items-center gap-3 p-3 bg-[#283039] hover:bg-[#3b4754] rounded-md transition-colors">
+<span class="material-symbols-outlined text-purple-400">library_books</span>
+<div class="text-left">
+<div class="text-white font-medium">Wikipedia Search</div>
+<div class="text-white/60 text-sm">Search knowledge base</div>
+</div>
+</button>
+</div>
+</section>
+<section>
+<h2 class="text-2xl font-bold text-white mb-4">System Status</h2>
+<div class="bg-[#181C20] p-6 rounded-lg">
+<div class="space-y-4">
+<div class="flex justify-between items-center">
+<span class="text-white/70">Voice Recognition</span>
+<span class="text-green-400 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+Active
+</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-white/70">Speech Synthesis</span>
+<span class="text-green-400 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+Ready
+</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-white/70">API Connections</span>
+<span class="text-green-400 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+Connected
+</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-white/70">Privacy Mode</span>
+<span class="text-blue-400 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">shield</span>
+Local Processing
+</span>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-2xl font-bold text-white mb-4">Configuration</h2>
+<div class="bg-[#181C20] p-6 rounded-lg">
+<p class="text-white/90 mb-4">
+                              Customize Jarvis AI to fit your preferences. Adjust voice settings, API integrations, and privacy options.
+                            </p>
+<button class="flex items-center gap-2 text-[#1173d4] hover:text-blue-400 font-medium text-sm">
+<span>Open Settings Panel</span>
+<span class="material-symbols-outlined text-base">settings</span>
+</button>
+</div>
+</section>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>
