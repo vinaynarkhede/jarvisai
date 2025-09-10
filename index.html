@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Jarvis AI - Personal Assistant</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1173d4;
+      }
+      body {
+        font-family: 'Space Grotesk', 'Noto Sans', sans-serif;
+      }
+    </style>
+</head>
+<body class="bg-[#111418] text-white">
+<div class="relative flex size-full min-h-screen flex-col dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#283039] px-10 py-4 sticky top-0 z-50 bg-[#111418]/80 backdrop-blur-sm">
+<div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+</svg>
+<h2 class="text-white text-2xl font-bold leading-tight tracking-[-0.015em]">Jarvis AI</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-white/80 hover:text-white transition-colors text-base font-medium" href="index.html">Home</a>
+<a class="text-white/80 hover:text-white transition-colors text-base font-medium" href="jarvis.html">Assistant</a>
+<a class="text-white/80 hover:text-white transition-colors text-base font-medium" href="pricing.html">Pricing</a>
+<a class="text-white/80 hover:text-white transition-colors text-base font-medium" href="#contact">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex min-w-[100px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-5 bg-[var(--primary-color)] hover:bg-blue-600 transition-colors text-white text-base font-bold leading-normal tracking-[0.015em] shadow-lg shadow-blue-500/20">
+<span class="truncate">Try Jarvis</span>
+</button>
+<button class="md:hidden p-2 rounded-md hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined"> menu </span>
+</button>
+</div>
+</header>
+<main class="flex-1">
+<section class="relative">
+<div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style='background-image: url("https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80");'></div>
+<div class="absolute inset-0 bg-gradient-to-b from-[#111418]/50 to-[#111418]"></div>
+<div class="relative min-h-[70vh] flex items-center justify-center text-center px-4 sm:px-6 lg:px-8 py-20">
+<div class="max-w-4xl mx-auto">
+<h1 class="text-white text-4xl sm:text-5xl md:text-6xl font-black leading-tight tracking-[-0.033em] mb-6 animate-fade-in-up">
+                  Your Personal AI Companion - Making Daily Life Smarter and More Productive
+                </h1>
+<p class="text-white/80 text-base sm:text-lg md:text-xl font-normal leading-normal max-w-3xl mx-auto mb-10 animate-fade-in-up animation-delay-300">
+                  Jarvis AI is a comprehensive personal AI assistant that revolutionizes daily productivity through voice-activated commands and intelligent task automation. Experience hands-free computing with privacy-focused local processing.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-600">
+<button class="flex mx-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-[var(--primary-color)] hover:bg-blue-600 transition-transform hover:scale-105 text-white text-lg font-bold leading-normal tracking-[0.015em] shadow-2xl shadow-blue-500/30">
+<span class="truncate">Download Free</span>
+</button>
+<button class="flex mx-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-transparent border-2 border-white hover:bg-white hover:text-black transition-colors text-white text-lg font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">View Demo</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-4 sm:px-6 lg:px-8">
+<div class="max-w-6xl mx-auto">
+<h2 class="text-white text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em] mb-16 text-center">Why Choose Jarvis AI?</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-[#181C20] p-6 rounded-lg">
+<div class="w-12 h-12 bg-[var(--primary-color)] rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-white text-xl">mic</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-3">Advanced Speech Recognition</h3>
+<p class="text-white/70">State-of-the-art voice processing with noise filtering and accent adaptation for seamless interaction.</p>
+</div>
+<div class="bg-[#181C20] p-6 rounded-lg">
+<div class="w-12 h-12 bg-[var(--primary-color)] rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-white text-xl">security</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-3">Privacy-Focused</h3>
+<p class="text-white/70">Local processing ensures your data stays secure while maintaining commercial-grade functionality.</p>
+</div>
+<div class="bg-[#181C20] p-6 rounded-lg">
+<div class="w-12 h-12 bg-[var(--primary-color)] rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-white text-xl">code</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-3">Open Source</h3>
+<p class="text-white/70">Fully customizable and transparent, allowing unlimited personalization and community contributions.</p>
+</div>
+<div class="bg-[#181C20] p-6 rounded-lg">
+<div class="w-12 h-12 bg-[var(--primary-color)] rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-white text-xl">integration_instructions</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-3">Multi-Platform Integration</h3>
+<p class="text-white/70">Seamlessly integrates with Wikipedia, weather APIs, system controls, and various web services.</p>
+</div>
+<div class="bg-[#181C20] p-6 rounded-lg">
+<div class="w-12 h-12 bg-[var(--primary-color)] rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-white text-xl">accessibility</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-3">Dual Interface</h3>
+<p class="text-white/70">Both voice and GUI interfaces ensure accessibility for users with different needs and preferences.</p>
+</div>
+<div class="bg-[#181C20] p-6 rounded-lg">
+<div class="w-12 h-12 bg-[var(--primary-color)] rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-white text-xl">school</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-3">Educational Value</h3>
+<p class="text-white/70">Perfect learning tool for AI concepts, programming, and understanding intelligent assistant development.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-4 sm:px-6 lg:px-8 bg-[#181C20]">
+<div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="text-center md:text-left">
+<h2 class="text-white text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em] mb-4">The Problem We Solve</h2>
+<p class="text-white/80 text-lg leading-relaxed mb-6">
+                  Modern digital interactions remain fragmented and inefficient, requiring users to manually navigate multiple applications for basic tasks. Commercial AI assistants raise privacy concerns while offering limited customization options.
+                </p>
+<ul class="text-white/70 space-y-2">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-400">check_circle</span>
+Average person checks phone 96 times daily for basic information
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-400">check_circle</span>
+73% frustrated with current voice assistants' limitations
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-400">check_circle</span>
+68% concerned about privacy with commercial AI assistants
+</li>
+</ul>
+</div>
+<div class="text-center md:text-left">
+<h2 class="text-white text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em] mb-4">Our Solution</h2>
+<p class="text-white/80 text-lg leading-relaxed mb-6">
+                  Jarvis AI provides a comprehensive, voice-activated personal assistant that integrates multiple functionalities into one seamless interface, offering complete control over data and unlimited customization.
+                </p>
+<div class="grid grid-cols-2 gap-4 text-center">
+<div class="bg-[#111418] p-4 rounded-lg">
+<div class="text-2xl font-bold text-[var(--primary-color)] mb-1">100%</div>
+<div class="text-white/70 text-sm">Local Processing</div>
+</div>
+<div class="bg-[#111418] p-4 rounded-lg">
+<div class="text-2xl font-bold text-[var(--primary-color)] mb-1">Free</div>
+<div class="text-white/70 text-sm">Open Source</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="py-20 px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-white text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em] mb-8">Get Started Today</h2>
+<p class="text-white/80 text-lg mb-8">Join our growing community of developers and AI enthusiasts. Download Jarvis AI and experience the future of personal assistance.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-8 bg-[var(--primary-color)] hover:bg-blue-600 transition-colors text-white text-lg font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Download from GitHub</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-8 bg-transparent border-2 border-[var(--primary-color)] hover:bg-[var(--primary-color)] transition-colors text-white text-lg font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">View Documentation</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+</div>
+</div>
+<style>
+      @keyframes fade-in-up {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in-up {
+        animation: fade-in-up 0.8s ease-out forwards;
+      }
+      .animation-delay-300 {
+        animation-delay: 0.3s;
+      }
+      .animation-delay-600 {
+        animation-delay: 0.6s;
+      }
+      .animate-fade-in-up {
+        opacity: 0;}
+    </style>
+</body></html>
