@@ -1,8 +1,4 @@
-Here's the corrected README focused on Windows executable only:
-
 # Jarvis AI - Personal Assistant
-
-[![GitHub release](https://img.shields.io/github/v/release/vinhttps://github.com/vinaynarkhede/img.shields.io/badge/License-MIT-://opensource.org/licenses/MIT.shields.io/badge/platformhttps://github.com/vinaynarkhede.shields.io/github/downloads/vinaynarkhede/jarvisai/total.com/vinaynarkhede/jarvisaiYour Personal AI Companion for Windows - Ready to Download and Use**
 
 Jarvis AI is a comprehensive personal AI assistant available as a **ready-to-use Windows executable**. No installation required! Simply download, run, and start commanding your personal AI assistant through voice-activated commands and intelligent task automation. Built with privacy-first principles, Jarvis provides users with a seamless, hands-free experience for managing information, entertainment, and daily utilities.
 
